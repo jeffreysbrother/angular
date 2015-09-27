@@ -1,9 +1,9 @@
-<!-- <div class="container"> -->
   <h2>My todos</h2>
+  <p>You can add, delete, or move your todo list items. To move, simply hover over the top border of the item you wish to move, then click and drag to the appropriate location.</p>
 
   <!-- Todos input -->
   <form role="form" ng-submit="addTodo()">
-      <div class="input-group" style="padding:5px 10px;">
+      <div class="input-group" style="padding-bottom: 10px;">
         <input type="text" ng-model="todo" placeholder="What needs to be done?" class="form-control">
         <span class="input-group-btn">
           <input type="submit" class="btn btn-primary" value="Add">
@@ -13,12 +13,10 @@
 
     <!-- Todos list -->
     <div ui-sortable ng-model="todos">
-      <p class="input-group" ng-repeat="todo in todos" style="padding:5px 10px; cursor: move;">
+      <p class="input-group" ng-repeat="todo in todos" style="padding-top: 10px; cursor: move;">
       <input type="text" ng-model="todo" class="form-control">
       <span class="input-group-btn">
         <button class="btn btn-danger" ng-click="removeTodo($index)" aria-label="Remove">X</button>
       </span>
       </p>
     </div>
-
-<!-- </div> -->
