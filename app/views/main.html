@@ -6,7 +6,7 @@
       <div class="input-group" style="padding-bottom: 10px;">
         <input type="text" ng-model="todo" placeholder="What needs to be done?" class="form-control">
         <span class="input-group-btn">
-          <input type="submit" class="btn btn-primary" value="Add">
+          <input type="submit" class="btn btn-primary" value="ADD">
         </span>
       </div>
   </form>
@@ -16,7 +16,7 @@
         <p class="input-group" ng-repeat="todo in todos track by $index" style="padding-top: 10px; cursor: move;">
         <input type="text" ng-model="todo" class="form-control">
         <span class="input-group-btn">
-          <button class="btn btn-danger" ng-click="removeTodo($index)" aria-label="Remove">X</button>
+          <button class="btn btn-danger" ng-click="removeTodo($index)" aria-label="Remove">DEL</button>
         </span>
         </p>
     </div>
