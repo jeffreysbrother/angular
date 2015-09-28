@@ -13,7 +13,7 @@
 
     <!-- Todos list -->
     <div ui-sortable ng-model="todos">
-        <p class="input-group" ng-repeat="todo in todos track by $index" style="padding-top: 10px; cursor: move;" >
+        <p class="input-group" ng-repeat="todo in todos track by $index" style="padding-top: 10px; cursor: move;">
         <input type="text" ng-model="todo" class="form-control" ng-style="myStyle">
         <span class="input-group-btn">
           <button class="btn btn-success" ng-click="myStyle={'text-decoration':'line-through'}" aria-label="Remove">&#10003</button>

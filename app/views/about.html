@@ -6,6 +6,7 @@
 <p><code>ng-submit</code> binds an Angular expression to the 'onsubmit' event of a form.</p>
 <p><code>ng-click</code> allows us to specify custom behaviors when an element is clicked.</p>
 <p><code>ng-view</code> includes the rendered template of the current route into the main layout.</p>
+<p><code>ng-style</code> evaluates to an object whose keys are CSS style names and values are corresponding values for those CSS keys.</p>
 
 <br>
 
@@ -16,3 +17,5 @@
 <p>When we run the <code>yo</code> command (after installing Node, Bower, Grunt, yeoman, and the desired generator), the folder structure and important configuration files are generated automatically. In my case, because I used the <a href="https://github.com/yeoman/generator-angular">yo angular generator</a>, a functioning (but minimalistic) AngularJS project is created in a matter of seconds. This includes a Bootstrap navigation, a package.json file, robots.txt, .gitignore, a 404 error page, .htaccess, as well as dedicated folders for views and controllers.</p>
 
 <p>Upon gaining familiarity with Angular, I realized that we are able to "include" reusable code in multiple pages&mdash;just as we would with PHP. Of course, the proecess is a bit different with Angular. In the index.html file, you'll see that the <code>ng-view</code> directive is added as an attribute of a div. This is where our corresponding templates will be inserted. In other words, our main layout page (index.html&mdash;the document containing our navigation) will "include" various templates (about.html and main.html, for example).</p>
+
+<p>Yeoman ships with a built-in "watch" command; every time we save a document in our project, not only does our server restart in order to reflect the changes made, but our Sass (scss) files are automatically compiled to CSS. The server I've mentioned, a function of the Grunt task runner, eliminates our need to use software like MAMP.</p>
