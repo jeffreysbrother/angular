@@ -1,6 +1,18 @@
 <h2>Angular Directives</h2>
+<hr>
+
 <p><code>ng-repeat</code> is a directive that instantiates a template for every item in a collection.</p>
 <p><code>ng-model</code> creates a two-way data-binding.</p>
 <p><code>ng-submit</code> binds an Angular expression to the 'onsubmit' event of a form.</p>
 <p><code>ng-click</code> allows us to specify custom behaviors when an element is clicked.</p>
 <p><code>ng-view</code> includes the rendered template of the current route into the main layout.</p>
+
+<br>
+
+<h2>Yeoman</h2>
+<hr>
+<p>Yeoman allows us to generate the scaffolding of our projects while at the same time encouraging adherence to best practices. Technically, the Yeoman workflow is comprised of three technologies: a scaffolding tool, a build system, and a package manager.</p>
+
+<p>When we run the <code>yo</code> command (after installing Node, Bower, Grunt, yeoman, and the desired generator), the folder structure and important configuration files are generated automatically. In my case, because I used the <a href="https://github.com/yeoman/generator-angular">yo angular generator</a>, a functioning (but minimalistic) AngularJS project is created in a matter of seconds. This includes a Bootstrap navigation, a package.json file, robots.txt, .gitignore, a 404 error page, .htaccess, as well as dedicated folders for views and controllers.</p>
+
+<p>Upon gaining familiarity with Angular, I realized that we are able to "include" reusable code in multiple pages&mdash;just as we would with PHP. Of course, the proecess is a bit different with Angular. In the index.html file, you'll see that the <code>ng-view</code> directive is added as an attribute of a div. This is where our corresponding templates will be inserted. In other words, our main layout page (index.html&mdash;the document containing our navigation) will "include" various templates (about.html and main.html, for example).</p>
