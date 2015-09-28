@@ -1,12 +1,12 @@
   <h2>a simple to-do list</h2>
-  <p>You can add, delete, check as complete, or move your todo list items. To move, simply hover over the top border of the item you wish to move, then click and drag to the appropriate location.</p>
+  <p>You can add, delete, mark as complete, or move your todo list items. To move, simply hover over the top border of the item you wish to move, then click and drag to the appropriate location. The current implementation allows each item to persist upon browser refresh. This is made possible by using the <a href="http://gregpike.net/demos/angular-local-storage/demo/demo.html">angular-local-storage</a> module.</p>
 
   <!-- Todos input -->
   <form role="form" ng-submit="addTodo()">
       <div class="input-group" style="padding-bottom: 10px;">
         <input type="text" ng-model="todo" placeholder="What needs to be done?" class="form-control">
         <span class="input-group-btn">
-          <input type="submit" class="btn btn-primary" value="ADD">
+          <input type="submit" class="btn btn-primary" value="add">
         </span>
       </div>
   </form>
