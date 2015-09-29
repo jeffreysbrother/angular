@@ -1,6 +1,5 @@
 'use strict';
 
-
 angular
   .module('mytodoApp').controller('navController', ['$scope', '$location', function($scope, $location) {
     $scope.isActive = function(destination){
