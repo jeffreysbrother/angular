@@ -16,8 +16,8 @@
         <p class="input-group" ng-repeat="todo in todos track by $index" style="padding-top: 10px; cursor: move;">
         <input type="text" ng-model="todo" class="form-control" ng-style="myStyle">
         <span class="input-group-btn">
-          <button class="btn btn-success" ng-click="myStyle={'text-decoration':'line-through'}" aria-label="Remove">&#10003</button>
-          <button class="btn btn-danger" ng-click="removeTodo($index)" aria-label="Remove">X</button>
+          <button class="btn btn-success" ng-click="myStyle={'text-decoration':'line-through'}" aria-label="Mark as complete" data-toggle="tooltip" data-placement="left" title="mark as complete!">&#10003</button>
+          <button class="btn btn-danger" ng-click="removeTodo($index)" aria-label="Remove" data-toggle="tooltip" data-placement="right" title="delete">X</button>
         </span>
         </p>
     </div>
